@@ -26,8 +26,8 @@ fun main() {
      *
      */
 
-    for (likes in 1..51) {
-        val men: String = if (likes != 11 && likes % 10 == 1) "человеку" else "людям"
+    for (likes in 1..512) {
+        val men: String = if (likes % 100 != 11 && likes % 10 == 1) "человеку" else "людям"
         println("Понравилось: $likes $men")
     }
 
